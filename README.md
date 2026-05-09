@@ -22,17 +22,5 @@ Ce projet est une application Android de démonstration axée sur les différent
 - **Bonnes Pratiques** : Séparation des responsabilités, gestion des erreurs et interface utilisateur réactive.
 
 ---
+<img width="686" height="1437" alt="Capture d&#39;écran 2026-05-09 204108" src="https://github.com/user-attachments/assets/c2541c4c-0481-4e67-b94d-5b895dbec68d" />
 
-## 📸 Aperçu de l'Application
-
-### 1. Informations Utilisateur & Thème
-L'interface permet de saisir le nom, choisir la langue et basculer instantanément entre le thème clair et sombre. Tout est sauvegardé automatiquement.
-
-### 2. Stockage JSON & Actions
-Gestion complète d'une liste d'étudiants. Vous pouvez ajouter des entrées, les sauvegarder en JSON et les recharger.
-
-### 3. Nettoyage Complet
-Le bouton **EFFACER** permet de réinitialiser toutes les données (fichiers, préférences et cache) en une seule action sécurisée.
-
----
-*Développé par Lemghili Mohammed Amine dans le cadre du Lab de Développement Mobile.*
