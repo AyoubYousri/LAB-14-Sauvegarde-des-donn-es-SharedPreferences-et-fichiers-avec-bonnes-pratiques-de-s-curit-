@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Couleurs principales (Palette Material Green) -->
+    <color name="primary">#2E7D32</color>
+    <color name="primary_variant">#1B5E20</color>
+    <color name="on_primary">#FFFFFF</color>
+
+    <!-- Couleurs secondaires -->
+    <color name="secondary">#FFA000</color>
+    <color name="on_secondary">#000000</color>
+
+    <!-- Couleurs d'arrière-plan et de surface -->
+    <color name="background">#F5F5F5</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="error">#B00020</color>
+
+    <!-- Couleurs de texte -->
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+
+    <!-- Couleurs spécifiques pour les boutons -->
+    <color name="btn_save">#4CAF50</color>
+    <color name="btn_load">#2196F3</color>
+    <color name="btn_delete">#F44336</color>
+    <color name="btn_export">#9C27B0</color>
+</resources>

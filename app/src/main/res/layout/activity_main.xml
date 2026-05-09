@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Auteur: Lemghili Mohammed Amine
+    Interface principale modernisée avec des styles personnalisés.
+    Utilisation de ScrollView pour garantir l'accessibilité sur tous les écrans.
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Titre de la section Saisie -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Informations Utilisateur"
+            android:textColor="@color/primary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Champ : Nom utilisateur -->
+        <EditText
+            android:id="@+id/etName"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="name"
+            android:hint="Nom utilisateur"
+            android:inputType="textPersonName" />
+
+        <!-- Champ : Sélecteur de langue -->
+        <Spinner
+            android:id="@+id/spLang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edit_text_bg"
+            android:minHeight="48dp" />
+
+        <!-- Option : Thème Sombre -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Thème sombre"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/swDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- Champ : Token (Sécurisé) -->
+        <EditText
+            android:id="@+id/etToken"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="password"
+            android:hint="Token (stockage chiffré uniquement)"
+            android:inputType="textPassword" />
+
+        <!-- Séparateur visuel -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DDDDDD"
+            android:layout_marginVertical="16dp"/>
+
+        <!-- Section des actions -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Actions"
+            android:textColor="@color/primary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Boutons de gestion des préférences -->
+        <Button
+            android:id="@+id/btnSavePrefs"
+            style="@style/ButtonStyle.Save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sauvegarder prefs" />
+
+        <Button
+            android:id="@+id/btnLoadPrefs"
+            style="@style/ButtonStyle.Load"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Charger prefs" />
+
+        <!-- Boutons de gestion JSON -->
+        <Button
+            android:id="@+id/btnSaveJson"
+            style="@style/ButtonStyle.Save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sauvegarder fichier JSON" />
+
+        <Button
+            android:id="@+id/btnLoadJson"
+            style="@style/ButtonStyle.Load"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Charger fichier JSON" />
+
+        <!-- Boutons utilitaires -->
+        <Button
+            android:id="@+id/btnExportExternal"
+            style="@style/ButtonStyle.Export"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exporter externe app-specific" />
+
+        <Button
+            android:id="@+id/btnClear"
+            style="@style/ButtonStyle.Clear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Effacer" />
+
+        <!-- Zone d'affichage des résultats -->
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:background="@drawable/edit_text_bg"
+            android:textColor="@color/text_primary"
+            android:textSize="14sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="32dp" />
+
+    </LinearLayout>
+</ScrollView>
